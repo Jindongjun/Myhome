@@ -3,9 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+## About me
+안녕하세요. 저는 진동준입니다.
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
