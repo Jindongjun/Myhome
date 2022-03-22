@@ -4,21 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Title | Dongjun Jin</title>
+<title>Python basic | Dongjun Jin</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="Python basic" />
+<meta name="author" content="Dongjun Jin" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://jindongjun.github.io/Myhome/2022/03/22/Dataminingbasic.html" />
-<meta property="og:url" content="https://jindongjun.github.io/Myhome/2022/03/22/Dataminingbasic.html" />
+<meta name="description" content="Python 기본 코드" />
+<meta property="og:description" content="Python 기본 코드" />
+<link rel="canonical" href="https://jindongjun.github.io/Myhome/jupyter/python/2022/03/22/Dataminingbasic.html" />
+<meta property="og:url" content="https://jindongjun.github.io/Myhome/jupyter/python/2022/03/22/Dataminingbasic.html" />
 <meta property="og:site_name" content="Dongjun Jin" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-03-22T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Title" />
+<meta property="twitter:title" content="Python basic" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-03-22T00:00:00-05:00","datePublished":"2022-03-22T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://jindongjun.github.io/Myhome/2022/03/22/Dataminingbasic.html"},"url":"https://jindongjun.github.io/Myhome/2022/03/22/Dataminingbasic.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dongjun Jin"},"dateModified":"2022-03-22T00:00:00-05:00","datePublished":"2022-03-22T00:00:00-05:00","description":"Python 기본 코드","headline":"Python basic","mainEntityOfPage":{"@type":"WebPage","@id":"https://jindongjun.github.io/Myhome/jupyter/python/2022/03/22/Dataminingbasic.html"},"url":"https://jindongjun.github.io/Myhome/jupyter/python/2022/03/22/Dataminingbasic.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Myhome/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jindongjun.github.io/Myhome/feed.xml" title="Dongjun Jin" /><link rel="shortcut icon" type="image/x-icon" href="/Myhome/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,9 +74,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-22T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Python basic</h1><p class="page-description">Python 기본 코드</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-22T00:00:00-05:00" itemprop="datePublished">
         Mar 22, 2022
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Dongjun Jin</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -83,6 +86,16 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/Myhome/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/Myhome/categories/#python">python</a>
+        
+      
+      </p>
     
 
     
@@ -116,7 +129,24 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Scalar-Types,">Scalar Types, </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Numeric-types,">Numeric types, </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Contril-Flow">Contril Flow </a></li>
+<li class="toc-entry toc-h2"><a href="#if,-elif,-and-eles">if, elif, and eles </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#An-if-statement-ane-be-optionally-followed-by-one-or-more-elif-blocks-and-a-catch-all-else-block-if-all-of-the-conditions-are-False">An if statement ane be optionally followed by one or more elif blocks and a catch all else block if all of the conditions are False </a></li>
+<li class="toc-entry toc-h3"><a href="#for-loops">for loops </a></li>
+<li class="toc-entry toc-h3"><a href="#pass">pass </a></li>
+<li class="toc-entry toc-h3"><a href="#range">range </a></li>
+<li class="toc-entry toc-h3"><a href="#Ternary-expressions">Ternary expressions </a></li>
+<li class="toc-entry toc-h3"><a href="#Here,true---expr-and-be-any-Python-experssions.-It-has-the-identical-effect-as-the-verbose:">Here,true - expr and be any Python experssions. It has the identical effect as the verbose: </a></li>
+</ul>
+</li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -125,28 +155,24 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Python Language Basics, IPython, and Jupyter Notebooks</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Python Language Basics</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Language Semantics</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Indentation, not braces</p>
 
@@ -187,7 +213,7 @@ window.onload = wrap_img;
 <span class="ansi-green-fg">      4</span>     <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
 <span class="ansi-green-fg">      5</span>         greater<span class="ansi-yellow-intense-fg ansi-bold">.</span>append<span class="ansi-yellow-intense-fg ansi-bold">(</span>x<span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;array&#39; is not defined</pre>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'array' is not defined</pre>
 </div>
 </div>
 
@@ -247,14 +273,16 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Everything is an object</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Comments</p>
 
@@ -273,8 +301,8 @@ window.onload = wrap_img;
     <span class="c1"># keep the empty lines for now</span>
     <span class="c1"># if len(line) == 0:</span>
     <span class="c1">#   continue</span>
-    <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span><span class="s1">&#39;bar&#39;</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reached this line&quot;</span><span class="p">)</span> <span class="c1">#Simple status report</span>
+    <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'foo'</span><span class="p">,</span><span class="s1">'bar'</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Reached this line"</span><span class="p">)</span> <span class="c1">#Simple status report</span>
 </pre></div>
 
     </div>
@@ -284,7 +312,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Function and object method calls
     result = f(x,y,z)
@@ -297,7 +326,8 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Variables and argument passing</p>
 
@@ -338,7 +368,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Dynamic references, strong types</p>
 
@@ -386,7 +417,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;foo&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">'foo'</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 
@@ -420,7 +451,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;5&#39;</span><span class="o">+</span> <span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">'5'</span><span class="o">+</span> <span class="mi">5</span>
 </pre></div>
 
     </div>
@@ -437,9 +468,9 @@ window.onload = wrap_img;
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
 <span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-3-01ecf7ad3a7d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-blue-intense-fg ansi-bold">&#39;5&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">+</span> <span class="ansi-cyan-intense-fg ansi-bold">5</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-blue-intense-fg ansi-bold">'5'</span><span class="ansi-yellow-intense-fg ansi-bold">+</span> <span class="ansi-cyan-intense-fg ansi-bold">5</span>
 
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: can only concatenate str (not &#34;int&#34;) to str</pre>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: can only concatenate str (not "int") to str</pre>
 </div>
 </div>
 
@@ -459,7 +490,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">4.5</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="c1"># String formatting, to be visited later</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is </span><span class="si">{0}</span><span class="s1">, b is </span><span class="si">{1}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">),</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'a is </span><span class="si">{0}</span><span class="s1">, b is </span><span class="si">{1}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">),</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)))</span>
 <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
 </pre></div>
 
@@ -473,7 +504,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>a is &lt;class &#39;float&#39;&gt;, b is &lt;class &#39;int&#39;&gt;
+<pre>a is &lt;class 'float'&gt;, b is &lt;class 'int'&gt;
 </pre>
 </div>
 </div>
@@ -570,7 +601,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;foo&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">'foo'</span>
 </pre></div>
 
     </div>
@@ -601,7 +632,7 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-12-656d30e2deb8&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">"&lt;ipython-input-12-656d30e2deb8&gt;"</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
 <span class="ansi-yellow-intense-fg ansi-bold">    a.&lt;Press Tab&gt;</span>
 <span class="ansi-white-intense-fg ansi-bold">      ^</span>
 <span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
@@ -637,7 +668,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;FOO&#39;</pre>
+<pre>'FOO'</pre>
 </div>
 
 </div>
@@ -670,7 +701,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;Foo&#39;</pre>
+<pre>'Foo'</pre>
 </div>
 
 </div>
@@ -688,7 +719,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">getattr</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s1">&#39;split&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">getattr</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s1">'split'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -714,7 +745,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Duck typing</p>
 
@@ -751,7 +783,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">isiterable</span><span class="p">(</span><span class="s1">&#39;a string&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">isiterable</span><span class="p">(</span><span class="s1">'a string'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -843,14 +875,16 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>if not isiterable(x,list)and isiterable(x):=list(x)</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Imports
 In Python a midule is simply a file with the.py extension containing Python code. Suppose that we had the following module:
@@ -918,7 +952,8 @@ def g(a,b):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Or equivalently:</p>
 
@@ -1032,14 +1067,16 @@ def g(a,b):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Binary operators and comparisons</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Most of the binary math operations and comparisons are as might expect:</p>
 
@@ -1081,7 +1118,8 @@ def g(a,b):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To check if two references refer to the same object, use the is keyword. is not also perfectly valid if you want to check that two objects are not the same:</p>
 
@@ -1125,7 +1163,8 @@ def g(a,b):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Since list always creates a new Python list(i.e.,a copy), we can be sure that c is distinct from a.
 Comparing with is is not the same as the == operator, in this case we have:</p>
@@ -1200,7 +1239,8 @@ Comparing with is is not the same as the == operator, in this case we have:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Mutable and immutable objects
 Most objects in Python, such as lists, dicts, NumPy arrays, and most-user-defined types (calsses), are mutable.
@@ -1216,7 +1256,7 @@ This means that the object or values that they contain can be modifide:</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'foo'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]]</span>
 <span class="n">a_list</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="n">a_list</span>
 </pre></div>
@@ -1233,7 +1273,7 @@ This means that the object or values that they contain can be modifide:</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;foo&#39;, 2, (3, 4)]</pre>
+<pre>['foo', 2, (3, 4)]</pre>
 </div>
 
 </div>
@@ -1244,7 +1284,8 @@ This means that the object or values that they contain can be modifide:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Other, like strings and tuples, are immutable:</p>
 
@@ -1259,7 +1300,7 @@ This means that the object or values that they contain can be modifide:</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">a_tuple</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;four&#39;</span>
+<span class="n">a_tuple</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'four'</span>
 </pre></div>
 
     </div>
@@ -1277,9 +1318,9 @@ This means that the object or values that they contain can be modifide:</p>
 <span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
 <span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-37-2c9bddc8679c&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">      1</span> a_tuple <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">3</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">5</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">4</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">5</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>a_tuple<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;four&#39;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>a_tuple<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">'four'</span>
 
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: &#39;tuple&#39; object does not support item assignment</pre>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: 'tuple' object does not support item assignment</pre>
 </div>
 </div>
 
@@ -1289,9 +1330,16 @@ This means that the object or values that they contain can be modifide:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Scalar-Types,">Scalar Types,<a class="anchor-link" href="#Scalar-Types,"> </a></h2><h3 id="Numeric-types,">Numeric types,<a class="anchor-link" href="#Numeric-types,"> </a></h3><p>The primary Python types for numbers are int and float. An int can store arbitarily large numbers:</p>
+<h2 id="Scalar-Types,">
+<a class="anchor" href="#Scalar-Types," aria-hidden="true"><span class="octicon octicon-link"></span></a>Scalar Types,<a class="anchor-link" href="#Scalar-Types,"> </a>
+</h2>
+<h3 id="Numeric-types,">
+<a class="anchor" href="#Numeric-types," aria-hidden="true"><span class="octicon octicon-link"></span></a>Numeric types,<a class="anchor-link" href="#Numeric-types,"> </a>
+</h3>
+<p>The primary Python types for numbers are int and float. An int can store arbitarily large numbers:</p>
 
 </div>
 </div>
@@ -1330,7 +1378,8 @@ This means that the object or values that they contain can be modifide:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Floating-point nimbers are represented with the Python float type. Under the hood each one is a double-precision ( 64-bit)value. They can also be expressed with scientific notation:</p>
 
@@ -1487,7 +1536,8 @@ This means that the object or values that they contain can be modifide:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Strings
 Many people use Python for its powerful and flexible built-in string processing capabilities.
@@ -1503,8 +1553,8 @@ You can write string literals using either single quotes 'or double quotes':</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;one way of writing a string&#39;</span>
-<span class="n">b</span><span class="o">=</span> <span class="s2">&quot;another way&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">'one way of writing a string'</span>
+<span class="n">b</span><span class="o">=</span> <span class="s2">"another way"</span>
 </pre></div>
 
     </div>
@@ -1514,7 +1564,8 @@ You can write string literals using either single quotes 'or double quotes':</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For multiline strings with line breaks, you can use triple quotes,either'''or'''"""""":</p>
 
@@ -1528,10 +1579,10 @@ You can write string literals using either single quotes 'or double quotes':</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="s2">"""</span>
 <span class="s2">This is a longer string that</span>
 <span class="s2">spans multiple lines</span>
-<span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">"""</span>
 </pre></div>
 
     </div>
@@ -1563,7 +1614,7 @@ You can write string literals using either single quotes 'or double quotes':</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;\nThis is a longer string that\nspans multiple lines\n&#39;</pre>
+<pre>'\nThis is a longer string that\nspans multiple lines\n'</pre>
 </div>
 
 </div>
@@ -1574,7 +1625,8 @@ You can write string literals using either single quotes 'or double quotes':</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>'|nThis is a longer sring that|nspans multiple lines|n'</p>
 <p>it may surprise you that this string c actually contains four lines of text;
@@ -1591,7 +1643,7 @@ We can count the new line characters with count method on c:</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;|n&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">'|n'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1617,7 +1669,8 @@ We can count the new line characters with count method on c:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Python string are immutable; you cannot modify a string:</p>
 
@@ -1631,8 +1684,8 @@ We can count the new line characters with count method on c:</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;this is a string&#39;</span>
-<span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;f&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">'this is a string'</span>
+<span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'f'</span>
 </pre></div>
 
     </div>
@@ -1649,10 +1702,10 @@ We can count the new line characters with count method on c:</p>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
 <span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-48-cfa170a67205&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">      1</span> a <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;this is a string&#39;</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>a<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;f&#39;</span>
+<span class="ansi-green-fg">      1</span> a <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">'this is a string'</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>a<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">'f'</span>
 
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: &#39;str&#39; object does not support item assignment</pre>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: 'str' object does not support item assignment</pre>
 </div>
 </div>
 
@@ -1669,7 +1722,7 @@ We can count the new line characters with count method on c:</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;longer string&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">'longer string'</span><span class="p">)</span>
 <span class="n">b</span>
 </pre></div>
 
@@ -1685,7 +1738,7 @@ We can count the new line characters with count method on c:</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;this is a longer string&#39;</pre>
+<pre>'this is a longer string'</pre>
 </div>
 
 </div>
@@ -1718,7 +1771,7 @@ We can count the new line characters with count method on c:</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;this is a string&#39;</pre>
+<pre>'this is a string'</pre>
 </div>
 
 </div>
@@ -1729,7 +1782,8 @@ We can count the new line characters with count method on c:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Many Python object can be converted to a string using the str function</p>
 
@@ -1769,7 +1823,8 @@ We can count the new line characters with count method on c:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>String are a sequence of Unicode characters and therefore can be treated like other sequences, such as list and tuples(which we will explore in more detail in the next chapter):</p>
 
@@ -1783,7 +1838,7 @@ We can count the new line characters with count method on c:</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;python&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">'python'</span>
 <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 
@@ -1799,7 +1854,7 @@ We can count the new line characters with count method on c:</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;p&#39;, &#39;y&#39;, &#39;t&#39;, &#39;h&#39;, &#39;o&#39;, &#39;n&#39;]</pre>
+<pre>['p', 'y', 't', 'h', 'o', 'n']</pre>
 </div>
 
 </div>
@@ -1832,7 +1887,7 @@ We can count the new line characters with count method on c:</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;pyt&#39;</pre>
+<pre>'pyt'</pre>
 </div>
 
 </div>
@@ -1843,7 +1898,8 @@ We can count the new line characters with count method on c:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The syntax s [:3] is called slicing and is implemented for many kinds of Python sequences. This will be explained in more detail later on, as it is used extensively in this book.
 The backslash character | is an escape character, meaning that it is used to specify special characters like newline |n or Unicode characters. To write a string literal with backslashes, you need to escape them:</p>
@@ -1858,7 +1914,7 @@ The backslash character | is an escape character, meaning that it is used to spe
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;12</span><span class="se">\n</span><span class="s1">34&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'12</span><span class="se">\n</span><span class="s1">34'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1890,7 +1946,7 @@ The backslash character | is an escape character, meaning that it is used to spe
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;12</span><span class="se">\\</span><span class="s1">34&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">'12</span><span class="se">\\</span><span class="s1">34'</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 
@@ -1915,7 +1971,8 @@ The backslash character | is an escape character, meaning that it is used to spe
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Adding two string together concatenates them and produces a new string:</p>
 
@@ -1929,8 +1986,8 @@ The backslash character | is an escape character, meaning that it is used to spe
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;this is the first half&#39;</span>
-<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;and this is the second half&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">'this is the first half'</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s1">'and this is the second half'</span>
 <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </pre></div>
 
@@ -1946,7 +2003,7 @@ The backslash character | is an escape character, meaning that it is used to spe
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;this is the first halfand this is the second half&#39;</pre>
+<pre>'this is the first halfand this is the second half'</pre>
 </div>
 
 </div>
@@ -1957,7 +2014,8 @@ The backslash character | is an escape character, meaning that it is used to spe
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>String templating or formatting is another important topic.
 The number of ways to do so has expanded with the advent of Python 3,
@@ -1974,7 +2032,7 @@ String object have a format method that can be used to substitute formatted argu
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">template</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0:.2f}</span><span class="s1"> </span><span class="si">{1:s}</span><span class="s1"> are worth US$</span><span class="si">{2:d}</span><span class="s1">&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">template</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{0:.2f}</span><span class="s1"> </span><span class="si">{1:s}</span><span class="s1"> are worth US$</span><span class="si">{2:d}</span><span class="s1">'</span>
 <span class="n">template</span>
 </pre></div>
 
@@ -1990,7 +2048,7 @@ String object have a format method that can be used to substitute formatted argu
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;{0:.2f} {1:s} are worth US${2:d}&#39;</pre>
+<pre>'{0:.2f} {1:s} are worth US${2:d}'</pre>
 </div>
 
 </div>
@@ -2001,7 +2059,8 @@ String object have a format method that can be used to substitute formatted argu
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>{0:2f} means to format the first argument as a floating-point umber with two decimal places.
 {1:s} means to format the second argument as a string.
@@ -2017,7 +2076,7 @@ String object have a format method that can be used to substitute formatted argu
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">4.5560</span><span class="p">,</span> <span class="s1">&#39;Argentine Pesos&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">4.5560</span><span class="p">,</span> <span class="s1">'Argentine Pesos'</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2032,7 +2091,7 @@ String object have a format method that can be used to substitute formatted argu
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;4.56 Argentine Pesos are worth US$1&#39;</pre>
+<pre>'4.56 Argentine Pesos are worth US$1'</pre>
 </div>
 
 </div>
@@ -2050,7 +2109,7 @@ String object have a format method that can be used to substitute formatted argu
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1263.23</span><span class="p">,</span> <span class="s1">&#39;won&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1263.23</span><span class="p">,</span> <span class="s1">'won'</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2065,7 +2124,7 @@ String object have a format method that can be used to substitute formatted argu
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;1263.23 won are worth US$1&#39;</pre>
+<pre>'1263.23 won are worth US$1'</pre>
 </div>
 
 </div>
@@ -2076,7 +2135,8 @@ String object have a format method that can be used to substitute formatted argu
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Booleans</p>
 <p>The two boolean values in Python are written as True and False.
@@ -2152,7 +2212,8 @@ Comaparisons and other conditional and other conditional expressions evaluate to
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Type casting
 The srt bool, int,and float types are also functions that can be used to cast values</p>
@@ -2167,7 +2228,7 @@ The srt bool, int,and float types are also functions that can be used to cast va
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;3.14159&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">'3.14159'</span>
 <span class="n">fval</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">fval</span><span class="p">)</span>
 </pre></div>
@@ -2294,7 +2355,8 @@ The srt bool, int,and float types are also functions that can be used to cast va
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>None</p>
 <p>none is the Python null value type. If a function does not explicitly return a value, it impliccitly return returns None:</p>
@@ -2414,7 +2476,7 @@ The srt bool, int,and float types are also functions that can be used to cast va
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-75-8b5f16fce071&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">"&lt;ipython-input-75-8b5f16fce071&gt;"</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
 <span class="ansi-yellow-intense-fg ansi-bold">    None is also a common default value for unction arguments:</span>
 <span class="ansi-white-intense-fg ansi-bold">                 ^</span>
 <span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
@@ -2517,7 +2579,8 @@ The srt bool, int,and float types are also functions that can be used to cast va
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>While a technical point, it`s worth bearing in mind that None is not only a reserved keyword but also a unique instance of NoneType:</p>
 
@@ -2557,7 +2620,8 @@ The srt bool, int,and float types are also functions that can be used to cast va
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Dates and times</p>
 <p>The built-in Python datetime module provides datetime, date,and time types.
@@ -2667,7 +2731,8 @@ The datetime type, as you may imagine, combines the information stored in date a
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Given a datetime instance, you can extract the equivalent date and time objects by calling methods on the datetime of the same name:</p>
 
@@ -2740,7 +2805,8 @@ The datetime type, as you may imagine, combines the information stored in date a
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The strftime method formats a datetime as a string:</p>
 
@@ -2754,7 +2820,7 @@ The datetime type, as you may imagine, combines the information stored in date a
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1">/%Y %H:%M&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%m/</span><span class="si">%d</span><span class="s1">/%Y %H:%M'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2769,7 +2835,7 @@ The datetime type, as you may imagine, combines the information stored in date a
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;10/29/2011 20:30&#39;</pre>
+<pre>'10/29/2011 20:30'</pre>
 </div>
 
 </div>
@@ -2787,7 +2853,7 @@ The datetime type, as you may imagine, combines the information stored in date a
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y/%M/%D %H:%M&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%Y/%M/%D %H:%M'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2802,7 +2868,7 @@ The datetime type, as you may imagine, combines the information stored in date a
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;2011/30/10/29/11 20:30&#39;</pre>
+<pre>'2011/30/10/29/11 20:30'</pre>
 </div>
 
 </div>
@@ -2813,7 +2879,8 @@ The datetime type, as you may imagine, combines the information stored in date a
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>strings can be converted(pared) into datetime objects with the strptime function:</p>
 
@@ -2827,7 +2894,7 @@ The datetime type, as you may imagine, combines the information stored in date a
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s1">&#39;20091031&#39;</span><span class="p">,</span><span class="s1">&#39;%Y%M</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s1">'20091031'</span><span class="p">,</span><span class="s1">'%Y%M</span><span class="si">%d</span><span class="s1">'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2853,7 +2920,8 @@ The datetime type, as you may imagine, combines the information stored in date a
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When you are aggregating or otherwise grouping time series data, it will occasionally be useful to replace time fields of a series of datetimes-for example,replacing the minute and second fields with zero:</p>
 
@@ -2963,10 +3031,17 @@ The datetime type, as you may imagine, combines the information stored in date a
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Contril-Flow">Contril Flow<a class="anchor-link" href="#Contril-Flow"> </a></h2><p>Python has several built-in keywords for conditional logic, loops,and other standard control flow concepts found in other programming languages.</p>
-<h2 id="if,-elif,-and-eles">if, elif, and eles<a class="anchor-link" href="#if,-elif,-and-eles"> </a></h2><p>The of statement is one of the most well-known control flow statement types.
+<h2 id="Contril-Flow">
+<a class="anchor" href="#Contril-Flow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contril Flow<a class="anchor-link" href="#Contril-Flow"> </a>
+</h2>
+<p>Python has several built-in keywords for conditional logic, loops,and other standard control flow concepts found in other programming languages.</p>
+<h2 id="if,-elif,-and-eles">
+<a class="anchor" href="#if,-elif,-and-eles" aria-hidden="true"><span class="octicon octicon-link"></span></a>if, elif, and eles<a class="anchor-link" href="#if,-elif,-and-eles"> </a>
+</h2>
+<p>The of statement is one of the most well-known control flow statement types.
 It checks a condition that, if True, evaluates the code in the block that follows:</p>
 
 </div>
@@ -2981,7 +3056,7 @@ It checks a condition that, if True, evaluates the code in the block that follow
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
 <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It is negative&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'It is negative'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2991,10 +3066,13 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It is negative</p>
-<h4 id="An-if-statement-ane-be-optionally-followed-by-one-or-more-elif-blocks-and-a-catch-all-else-block-if-all-of-the-conditions-are-False">An if statement ane be optionally followed by one or more elif blocks and a catch all else block if all of the conditions are False<a class="anchor-link" href="#An-if-statement-ane-be-optionally-followed-by-one-or-more-elif-blocks-and-a-catch-all-else-block-if-all-of-the-conditions-are-False"> </a></h4>
+<h4 id="An-if-statement-ane-be-optionally-followed-by-one-or-more-elif-blocks-and-a-catch-all-else-block-if-all-of-the-conditions-are-False">
+<a class="anchor" href="#An-if-statement-ane-be-optionally-followed-by-one-or-more-elif-blocks-and-a-catch-all-else-block-if-all-of-the-conditions-are-False" aria-hidden="true"><span class="octicon octicon-link"></span></a>An if statement ane be optionally followed by one or more elif blocks and a catch all else block if all of the conditions are False<a class="anchor-link" href="#An-if-statement-ane-be-optionally-followed-by-one-or-more-elif-blocks-and-a-catch-all-else-block-if-all-of-the-conditions-are-False"> </a>
+</h4>
 </div>
 </div>
 </div>
@@ -3008,13 +3086,13 @@ It checks a condition that, if True, evaluates the code in the block that follow
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
 
 <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It is negative&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'It is negative'</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Equal to zero&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Equal to zero'</span><span class="p">)</span>
 <span class="k">elif</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">x</span><span class="o">&lt;</span> <span class="mi">5</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Positvie but smaller than 5&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Positvie but smaller than 5'</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Positive and larger than or equal to 5&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Positive and larger than or equal to 5'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -3038,7 +3116,8 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>if any of the conditions is True, no furtther elif or elif or else blocks will be reached.</p>
 <p>With a compound condition using and or or, conditions are evaluated left to right and will short-circuit:</p>
@@ -3056,7 +3135,7 @@ It checks a condition that, if True, evaluates the code in the block that follow
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">&gt;</span> <span class="n">d</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Made it&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Made it'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -3080,7 +3159,8 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>in this example, the comparison c &gt; d never gets evaluated because the frist compar-ison was True.</p>
 <p>it is also possible to chain comparisons:</p>
@@ -3187,9 +3267,13 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="for-loops">for loops<a class="anchor-link" href="#for-loops"> </a></h3><p>for loops are for iteraiting over a collection (like a list or tuple) or an iterater. The standard syntax for a for loop is:</p>
+<h3 id="for-loops">
+<a class="anchor" href="#for-loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>for loops<a class="anchor-link" href="#for-loops"> </a>
+</h3>
+<p>for loops are for iteraiting over a collection (like a list or tuple) or an iterater. The standard syntax for a for loop is:</p>
 <p>for value in collection:</p>
 
 <pre><code>    # do something wiht value
@@ -3233,7 +3317,7 @@ It checks a condition that, if True, evaluates the code in the block that follow
 <span class="ansi-green-fg">      4</span> <span class="ansi-green-intense-fg ansi-bold">for</span> value <span class="ansi-green-intense-fg ansi-bold">in</span> sequence<span class="ansi-yellow-intense-fg ansi-bold">:</span>
 <span class="ansi-green-intense-fg ansi-bold">----&gt; 5</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>total <span class="ansi-yellow-intense-fg ansi-bold">+=</span> value
 
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: unsupported operand type(s) for +=: &#39;int&#39; and &#39;NoneType&#39;</pre>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: unsupported operand type(s) for +=: 'int' and 'NoneType'</pre>
 </div>
 </div>
 
@@ -3299,7 +3383,8 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A for loop can be exited altogether with the break keyword. This code sums ele-ments of the list until a 5 is reached:</p>
 
@@ -3361,7 +3446,8 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The break keyword only termonates the innermost for loop; any outer for loops will continue to run:</p>
 
@@ -3412,7 +3498,8 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As we will see in more detail, if the elements in the collection or iterator are sequence(tuples or list, say),</p>
 <p>they can be conveniently unpack into variables in the for loop statement:
@@ -3457,7 +3544,8 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>while loops</p>
 <p>A while loop specifies a comdition and ablock of code that is to be executed until the condition evaluates to False or the loop is explicity ended with break:</p>
@@ -3587,9 +3675,13 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="pass">pass<a class="anchor-link" href="#pass"> </a></h3><p>pass is the "no-op"(No Operation) statement in Python. it can be used in blocks where no action is to</p>
+<h3 id="pass">
+<a class="anchor" href="#pass" aria-hidden="true"><span class="octicon octicon-link"></span></a>pass<a class="anchor-link" href="#pass"> </a>
+</h3>
+<p>pass is the "no-op"(No Operation) statement in Python. it can be used in blocks where no action is to</p>
 <p>be taken (or as a placeholder for code not yet implemented); it is only required</p>
 <p>because Python uses whitespace to delimit blocks:</p>
 
@@ -3605,12 +3697,12 @@ It checks a condition that, if True, evaluates the code in the block that follow
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;negative!&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'negative!'</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
     <span class="c1"># TODO : put something smart here</span>
     <span class="k">pass</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;positive!&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'positive!'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -3634,9 +3726,13 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="range">range<a class="anchor-link" href="#range"> </a></h3><p>the range function returns an iterator that yields a sequence of evenly spaced integers:</p>
+<h3 id="range">
+<a class="anchor" href="#range" aria-hidden="true"><span class="octicon octicon-link"></span></a>range<a class="anchor-link" href="#range"> </a>
+</h3>
+<p>the range function returns an iterator that yields a sequence of evenly spaced integers:</p>
 
 </div>
 </div>
@@ -3707,7 +3803,8 @@ It checks a condition that, if True, evaluates the code in the block that follow
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Both a start, end, and step (which may be negative) can be given:</p>
 
@@ -3834,7 +3931,8 @@ A common use of range is for iterating through sequence by index:
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>While you can use functions like list to store all the integers generated by range in
 some other data structure, often the default iterator form will be what you want. This
@@ -3864,10 +3962,17 @@ svippet sums all numbers from 0 to 99,999 that ate multiples of 3 or 5:</p>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Ternary-expressions">Ternary expressions<a class="anchor-link" href="#Ternary-expressions"> </a></h3><p>value = true - expr if condition else false - expr</p>
-<h3 id="Here,true---expr-and-be-any-Python-experssions.-It-has-the-identical-effect-as-the-verbose:">Here,true - expr and be any Python experssions. It has the identical effect as the verbose:<a class="anchor-link" href="#Here,true---expr-and-be-any-Python-experssions.-It-has-the-identical-effect-as-the-verbose:"> </a></h3><p>if condition:</p>
+<h3 id="Ternary-expressions">
+<a class="anchor" href="#Ternary-expressions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ternary expressions<a class="anchor-link" href="#Ternary-expressions"> </a>
+</h3>
+<p>value = true - expr if condition else false - expr</p>
+<h3 id="Here,true---expr-and-be-any-Python-experssions.-It-has-the-identical-effect-as-the-verbose:">
+<a class="anchor" href="#Here,true---expr-and-be-any-Python-experssions.-It-has-the-identical-effect-as-the-verbose:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Here,true - expr and be any Python experssions. It has the identical effect as the verbose:<a class="anchor-link" href="#Here,true---expr-and-be-any-Python-experssions.-It-has-the-identical-effect-as-the-verbose:"> </a>
+</h3>
+<p>if condition:</p>
 
 <pre><code>value = true - expr
 
@@ -3887,7 +3992,7 @@ svippet sums all numbers from 0 to 99,999 that ate multiples of 3 or 5:</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="s1">&#39;Non - negative&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;Negative&#39;</span>
+<span class="s1">'Non - negative'</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">'Negative'</span>
 </pre></div>
 
     </div>
@@ -3902,7 +4007,7 @@ svippet sums all numbers from 0 to 99,999 that ate multiples of 3 or 5:</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;Non - negative&#39;</pre>
+<pre>'Non - negative'</pre>
 </div>
 
 </div>
@@ -3953,7 +4058,15 @@ svippet sums all numbers from 0 to 99,999 that ate multiples of 3 or 5:</p>
 
 
 
-  </div><a class="u-url" href="/Myhome/2022/03/22/Dataminingbasic.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Jindongjun/Myhome"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/Myhome/jupyter/python/2022/03/22/Dataminingbasic.html" hidden></a>
 </article>
 
       </div>
